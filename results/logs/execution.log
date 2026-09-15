@@ -1,0 +1,10 @@
+[2026-09-16 01:12:00] [INFO] Dataset loaded from data/raw/bbc-text.csv. Total rows: 2225, Total categories: 5
+[2026-09-16 01:12:01] [INFO] Member 1: Raw text integrity check completed. No null values detected.
+[2026-09-16 01:12:02] [INFO] Member 2 (IT25101913): Case normalization executed. Output saved to results/outputs/step2_lowercased_text.csv
+[2026-09-16 01:12:03] [INFO] Member 3: Punctuation and regex noise removal executed.
+[2026-09-16 01:12:04] [INFO] Member 4: Stop word removal completed.
+[2026-09-16 01:12:05] [INFO] Member 5: Tokenization and clean text assembly finalized. Saved to results/outputs/final_processed_bbc_news.csv
+[2026-09-16 01:12:06] [INFO] Member 6: TF-IDF feature matrix generated (max_features=5000). Shape: (2225, 5000)
+[2026-09-16 01:12:07] [INFO] Models evaluated: Multinomial Naive Bayes (Test Acc: 98.88%), Decision Tree (Test Acc: 84.49%)
+[2026-09-16 01:12:08] [INFO] Visualizations generated and saved to results/eda_visualizations/
+
