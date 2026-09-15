@@ -53,6 +53,9 @@ Each group member has designed and executed an individual preprocessing techniqu
 ├── README.md                                          # Project documentation and team roles
 ├── group_pipeline.ipynb                               # Combined end-to-end preprocessing & ML pipeline
 │
+├── archive/                                           # Project drafts and baseline exploration
+│   └── BBC_News_Classification.ipynb
+│
 ├── data/
 │   ├── raw/
 │   │   └── bbc-text.csv                               # Original assigned BBC news dataset
@@ -65,31 +68,40 @@ Each group member has designed and executed an individual preprocessing techniqu
 │   ├── IT25101863_Punctuation_Removal.ipynb           # Member 3 (Anuradi Dissanayake)
 │   ├── IT25103710_Stop_Words_Removal.ipynb            # Member 4 (Tharushi Weerasekara)
 │   ├── IT25103724_Tokenization.ipynb                  # Member 5 (Chamudi Pemadasa)
-│   └── IT25100975_TFIDF_Vectorization.ipynb           # Member 6 (Dissanayake D.M.R.S)
+│   ├── IT25100975_TFIDF_Vectorization.ipynb           # Member 6 (Dissanayake D.M.R.S)
+│   ├── Naive_Bayes.ipynb                              # Standalone Naive Bayes model training
+│   ├── Decision_Tree.ipynb                            # Standalone Decision Tree model training
+│   └── README.md
 │
-├── results/
-│   ├── eda_visualizations/                            # Saved charts (PNG format)
-│   │   ├── m1_category_distribution.png               # Member 1: Class balance chart
-│   │   ├── m1_article_length_histogram.png            # Member 1: Article length distribution
-│   │   ├── vocabulary_reduction_comparison.png        # Member 2: Vocabulary compression
-│   │   ├── character_frequency_distribution.png       # Member 2: Character frequency (a-z)
-│   │   ├── m3_punctuation_comparison.png              # Member 3: Punctuation counts before/after
-│   │   ├── m4_stopwords_comparison.png                # Member 4: Top words before vs after stopwords
-│   │   ├── m5_tokens_by_category.png                  # Member 5: Mean clean tokens per category
-│   │   └── m6_top_tfidf_features.png                  # Member 6: Top TF-IDF keywords per class
-│   │
-│   ├── logs/
-│   │   └── execution.log                              # Step-by-step pipeline execution timestamps
-│   │
-│   └── outputs/                                       # Intermediate and final processed datasets
-│       ├── step1_inspected_text.csv                   # Output of Step 1
-│       ├── step2_lowercased_text.csv                  # Output of Step 2
-│       ├── step3_no_punctuation_text.csv              # Output of Step 3
-│       ├── step4_no_stopwords_text.csv                # Output of Step 4
-│       ├── step5_final_clean_text.csv                 # Output of Step 5
-│       └── final_processed_bbc_news.csv               # Final clean dataset for ML training
-│
-└── scripts/                                           # Internal generation utilities
+└── results/
+    ├── eda_visualizations/                            # Saved charts (PNG format)
+    │   ├── m1_category_distribution.png               # Member 1: Class balance chart
+    │   ├── m1_article_length_histogram.png            # Member 1: Article length distribution
+    │   ├── vocabulary_reduction_comparison.png        # Member 2: Vocabulary compression
+    │   ├── character_frequency_distribution.png       # Member 2: Character frequency (a-z)
+    │   ├── m3_punctuation_comparison.png              # Member 3: Punctuation counts before/after
+    │   ├── m4_stopwords_comparison.png                # Member 4: Top words before vs after stopwords
+    │   ├── m5_tokens_by_category.png                  # Member 5: Mean clean tokens per category
+    │   └── m6_top_tfidf_features.png                  # Member 6: Top TF-IDF keywords per class
+    │
+    ├── model_trained_files/                           # Serialized trained models (.pkl)
+    │   ├── naive_bayes_model.pkl                      # MultinomialNB model
+    │   ├── decision_tree_model.pkl                    # DecisionTreeClassifier model
+    │   ├── logistic_regression_model.pkl              # LogisticRegression model
+    │   └── tfidf_vectorizer.pkl                       # Fitted TfidfVectorizer
+    │
+    ├── logs/
+    │   └── execution.log                              # Step-by-step pipeline execution timestamps
+    │
+    └── outputs/                                       # Intermediate and final processed datasets
+        ├── train_data.csv                             # Train split (80%)
+        ├── test_data.csv                              # Test split (20%)
+        ├── step1_inspected_text.csv                   # Output of Step 1
+        ├── step2_lowercased_text.csv                  # Output of Step 2
+        ├── step3_no_punctuation_text.csv              # Output of Step 3
+        ├── step4_no_stopwords_text.csv                # Output of Step 4
+        ├── step5_final_clean_text.csv                 # Output of Step 5
+        └── final_processed_bbc_news.csv               # Final clean dataset for ML training
 ```
 
 ---
