@@ -1,27 +1,20 @@
-# 2026-Y2-S1-MLB-B3G2-01 AIML Project
+<b>2026-Y2-S1-MLB-B3G2-01 AIML Project </b> 
 
-## BBC News Article Classification (ML & Preprocessing)
+<h2>BBC News Article Classification ML Training & Preprocessing </h2>
 
-### Group Members:
-- IT25101913 - Gimhana D.B.C
-- IT25102861 - Bandara R. M. K. G. R. L.
-- IT25103724 - Pemadasa J. M. C. D.
-- IT25101863 - Dissanayake D.M.S.A.
-- IT25103710 - Weerasekara K.T.J.
-- IT25100975 - Dissanayake D.M.R.S
+IT25101913 - Gimhana D.B.C <br>
+IT25102861 - Bandara R. M. K. G. R. L. <br>
+IT25103724 - Pemadasa J. M. C. D. <br>
+IT25101863 - Dissanayake D.M.S.A. <br>
+IT25103710 - Weerasekara K.T.J. <br>
+IT25100975 - Dissanayake D.M.R.S <br>
 
-### Dataset:
-- `bbc-text.csv` - 2,225 articles (5 classes: business, entertainment, politics, sport, tech)
+<h5>Given Dataset:</h5>
+- bbc-text.csv - 2225 entries (5 categories: business, entertainment, politics, sport, tech)
 
-### Preprocessing Steps:
-- **Member 1 (IT25102861):** Raw Text Inspection & EDA
-- **Member 2 (IT25101913):** Lowercase / Text Normalization
-- **Member 3 (IT25101863):** Remove Punctuation & Special Characters
-- **Member 4 (IT25103710):** Remove Stop Words
-- **Member 5 (IT25103724):** Tokenization & clean_text
-- **Member 6 (IT25100975):** TF-IDF Vectorization
-
-### Models Used:
-- Multinomial Naive Bayes (Accuracy: 98.20%)
-- Decision Tree (Accuracy: 82.92%)
-- Logistic Regression (Accuracy: 98.20%)
+<h3>Models we are gonna use:</h3>
+<ul>
+    <li>Naive Bayes</li>
+    <li>Decision Tree</li>
+    <li>Logistic Regression</li>
+</ul>
